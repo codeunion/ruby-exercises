@@ -31,6 +31,19 @@ If you like our style, feel free to say hello [@codeunionio][twitters] or [like 
 1. [print_horizontal_pyramid.rb](series-A/print_horizontal_pyramid.rb)
 1. [hot_or_cold.rb](series-A/hot_or_cold.rb)
 
+#### Series-B
+
+1. [bottles.rb](series-B/bottles.rb)
+1. [find_even.rb](series-B/find_even.rb)
+1. [mode.rb](series-B/mode.rb)
+1. [commas.rb](series-B/commas.rb)
+1. [factorial.rb](series-B/factorial.rb)
+1. [fibonacci.rb](series-B/fibonacci.rb)
+1. [find_links.rb](series-B/find_links.rb)
+1. [find_title.rb](series-B/find_title.rb)
+1. [pig_latin.rb](series-B/pig_latin.rb)
+1. [pad_array.rb](series-B/pad_array.rb)
+
 ## 
 These kata are licensed under the [MIT License](license).
 
