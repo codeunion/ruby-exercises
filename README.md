@@ -1,13 +1,17 @@
 ## Series-A and Series-B Kata
 
 These kata are designed to help you learn to code by challenging you with small, b(y)te sized problems.  If you are unfamiliar with how to 1. Obtain a codebase from
-Github.com and 2. Edit and run that code, please use the setup instructions for the [Social-Wall project][social-wall] but use this repository instead.  
+Github.com and 2. Edit and run that code, please use the below video tutorial to get yourself started.
+
+[![http://cl.ly/image/3t3P0J382r2Z/Image%202014-10-17%20at%2010.46.33%20PM.png](http://cl.ly/image/3t3P0J382r2Z/Image%202014-10-17%20at%2010.46.33%20PM.png)](https://www.youtube.com/watch?v=SyDRHMILp2s&feature=youtu.be)
 
 Our goal with these kata is to provide clear challenges that teach beginners how
 to code in ruby.  
 
-We encourage you to get feedback on your code by attending one of our [free meetups][meetup] or emailing us directly
-<hello@codeunion.io>.  
+### Get Feedback on your code!
+
+- Attend one of our [free meetups][meetup] 
+- Emailing us directly <hello@codeunion.io> with questions about your code.  
 
 If you like our style, feel free to say hello [@codeunionio][twitters] or [like us on facebook][facebooks].
 
