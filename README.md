@@ -1,19 +1,20 @@
-## Series-A and Series-B Kata
+## Series-A and Series-B Ruby Kata
 
-These kata are designed to help you learn to code by challenging you with small, b(y)te sized problems.  If you are unfamiliar with how to 1. Obtain a codebase from
-Github.com and 2. Edit and run that code, please use the below video tutorial to get yourself started.
+By working on this collection of Ruby kata [CodeUnion][codeunion] can help you learn to code.  
+
+You will learn by being challenged you with small, b(y)te sized problems.  Your goal is to write Ruby code.  We we will then give you feedback on that code, thereby inducing your growth as a developer.
+
+
+
+#### Watch [this video tutorial][video tutorial] to get started.
 
 [![http://cl.ly/image/3t3P0J382r2Z/Image%202014-10-17%20at%2010.46.33%20PM.png](http://cl.ly/image/3t3P0J382r2Z/Image%202014-10-17%20at%2010.46.33%20PM.png)](https://www.youtube.com/watch?v=SyDRHMILp2s&feature=youtu.be)
 
-Our goal with these kata is to provide clear challenges that teach beginners how
-to code in ruby.  
 
 ### Get Feedback on your code!
 
 - Attend one of our [free meetups][meetup] 
 - Emailing us directly <hello@codeunion.io> with questions about your code.  
-
-If you like our style, feel free to say hello [@codeunionio][twitters] or [like us on facebook][facebooks].
 
 
 ## Order to complete the kata
@@ -48,7 +49,10 @@ If you like our style, feel free to say hello [@codeunionio][twitters] or [like 
 1. [pig_latin.rb](series-B/pig_latin.rb)
 1. [pad_array.rb](series-B/pad_array.rb)
 
+
+
 ## 
+### Feel free to say hello [@codeunionio][twitters] or [like us on facebook][facebooks].
 These kata are licensed under the [MIT License](license).
 
 
@@ -57,3 +61,5 @@ These kata are licensed under the [MIT License](license).
 [meetup]:http://www.meetup.com/CodeUnion/
 [twitters]:https://twitter.com/codeunionio
 [facebooks]:https://www.facebook.com/CodeUnionIO
+[video tutorial]:https://www.youtube.com/watch?v=SyDRHMILp2s&feature=youtu.be
+[codeunion]:http://codeunion.io
