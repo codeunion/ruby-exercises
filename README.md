@@ -40,6 +40,20 @@ The files are listed in alphabetical order, but we recommend working on them in 
 1. [find_title.rb](exercises/find_title.rb)
 1. [pig_latin.rb](exercises/pig_latin.rb)
 1. [pad_array.rb](exercises/pad_array.rb)
+1. [time_format.rb](exercises/time_format.rb)
+1. [run_length_encode.rb](exercises/run_length_encode.rb)
+1. [run_length_decode.rb](exercises/run_length_decode.rb)
+1. [rot13.rb](exercises/rot13.rb)
+1. [rot_n.rb](exercises/rot_n.rb)
+1. [to_english.rb](exercises/to_english.rb)
+1. [to_roman.rb](exercises/to_roman.rb)
+1. [person.rb](exercises/person.rb) and [person_notes.rb](exercises/person_notes.rb)
+1. [die.rb](exercises/die.rb)
+1. [die_sides.rb](exercises/die_sides.rb)
+1. [die_labels.rb](exercises/die_labels.rb)
+1. [board.rb](exercises/board.rb)
+1. [hot_or_cold.rb](exercises/hot_or_cold.rb)
+
 
 
 [social-wall]:https://github.com/codeunion/social-wall
