@@ -1,18 +1,20 @@
-## Ruby Exercises
+# Ruby Exercises
 
-Here at [CodeUnion][codeunion] we believe that one of the best ways to develop skills as a programmer is to write code and get feedback on your code in the form of a [code review][code review] from a more experienced programmer.  We wrote these exercises with the intent to give you the opportunity to solve some fun programming challenges and then submit your solutions to us for code review. [Click here to see an example code review][example code review].
+Exercises to practice programming in Ruby.
+
+Here at [CodeUnion][codeunion] we believe that one of the best ways to develop skills as a programmer is to write code and get feedback on your code in the form of a [code review][code-review] from a more experienced programmer.
+
+We wrote these exercises with the intent to give you the opportunity to solve some fun programming challenges and then submit your solutions to us for code review. [Click here to see an example code review][example-code-review].
 
 All of the core exercises can be found in the [exercises](exercises) directory, and bonus exercises (i.e. really tough ones) can be found in the [bonus](bonus) directory.
 
 ## How To Use This Repository to Get Code Reviews
-
 
 1. Fork and clone this repository
 1. Write code that solves individual exercises
 1. Make small, frequent commits
 1. Push your commits to Github
 1. Submit your commits to [url] for feedback
-1. Finish all the Ruby exercises and move onto the Social-Wall web application
 
 If you don't have or don't know how to use Ruby and Git development tools to accomplish any of the above steps, please follow this step-by-step tutorial.
 
@@ -57,12 +59,6 @@ The files are listed in alphabetical order, but we recommend working on them in 
 1. [hot_or_cold.rb](exercises/hot_or_cold.rb)
 
 
-
-[social-wall]:https://github.com/codeunion/social-wall
-[meetup]:http://www.meetup.com/CodeUnion/
-[twitters]:https://twitter.com/codeunionio
-[facebooks]:https://www.facebook.com/CodeUnionIO
-[video tutorial]:https://www.youtube.com/watch?v=SyDRHMILp2s&feature=youtu.be
 [codeunion]:http://codeunion.io
-[code review]:http://en.wikipedia.org/wiki/Code_review
-[example code review]:https://github.com/ninashulman/open-source-kata/commit/59959dafe10b36b75cab14036b97a7e9b00ce9cd
+[code-review]:http://en.wikipedia.org/wiki/Code_review
+[example-code-review]:https://github.com/ninashulman/open-source-kata/commit/59959dafe10b36b75cab14036b97a7e9b00ce9cd
