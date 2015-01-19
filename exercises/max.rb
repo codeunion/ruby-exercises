@@ -10,7 +10,7 @@
 # This is meant to give you a starting point and also illustrate what we're looking for.
 # There is ***NO NEED*** to comment line-by-line, although it can't hurt.
 # It's not common in everyday, professional Ruby, but here we're in a learning environment.
-
+=begin
 def max(list)
   max_so_far = list.first  # or, equivalently, list[0]
   list.each do |item|      # or, equivalently, for item in list
@@ -20,6 +20,16 @@ def max(list)
   end
 
   return max_so_far        # we've gone through entire list, return max so far
+end
+=end
+def max(list)
+  max_so_far = list.first
+  list.each do |item|
+    if item > max_so_far
+      max_so_far = item
+    end
+  end
+  max_so_far
 end
 
 
