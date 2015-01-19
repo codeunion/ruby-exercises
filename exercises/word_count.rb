@@ -11,6 +11,8 @@
 def word_count(string)
   # Hint: You'll want to use String#split
   # See: http://www.ruby-doc.org/core-2.1.2/String.html#method-i-split
+  words = string.split(" ")
+  words.length
 end
 
 if __FILE__ == $0
@@ -21,8 +23,14 @@ if __FILE__ == $0
   p word_count("No-spaces-here") == 1
   p word_count("") == 0  # Empty string
   p word_count(" ") == 0 # A string consisting of a single space
-
+  
   # It's probably worth having a few more sanity checks.
   # What are some input strings that might be tricky to handle?
   # How about where the answer to "How many words?" is less clear-cut?
+  
+  p word_count("one\n two three") == 3
+  p word_count("one\ntwo\nthree") == 3
+  p word_count("This    test    has many  spaces.") == 5
+  #having trouble thinking of anything else to test - .split handles extra whitespace and counts \n as whitespace.
+  
 end
