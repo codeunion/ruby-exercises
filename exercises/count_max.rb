@@ -21,9 +21,19 @@ def count_max(list)
   # trying. The "requite_relative" statements above make them available to us, here.
   #
   # But remember: inelegant, working code is better than elegant, unfinished code.
+  
+  # largest_num = max(list) # Realized I could just pass result of max in the paramater list for count_in_list
+  count_in_list(list, max(list)) # Return result of count_in_list passing in list and result of max method.
+  
 end
 
 if __FILE__ == $0
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
+  p count_max([1, 2, 3, 4, 4]) == 2 # int
+  p count_max([-1, -2, -1, -5, -100]) == 2 # neg
+  p count_max([ 1.0, 4.0, 5.0, 6, 6.0]) == 2 #  
+  p count_max([0]) == 1   
+  p count_max([1]) == 1   
+  p count_max([]) == 0 #empty array
 end
