@@ -21,11 +21,10 @@ def count_in_list(list, item_to_count)
   #  3. A way to add to the running total as you see the item
   
   running_total = 0
-  list.each do |item|
-  # add .downcase if I want to ignore case.
-    if item == item_to_count  # should I use .to_s - only if I want "1" == 1 to yield true. 
   
-      running_total += 1
+  list.each do |item|
+    if item == item_to_count
+        running_total += 1
     end
   end
   running_total #return the total of item_to_count found in list
