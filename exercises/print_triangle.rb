@@ -23,8 +23,11 @@ end
 
 def print_triangle(height)
   # You have to fill in the details here.
+  (1..height).each do |i|
+    print_line(i) # i is incrementing in the loop so we use it to set number of *
+  end
 end
-
+ 
 # There are no rumble strips this time.  It's up to you to decide whether
 # this is working as intended or not.
 

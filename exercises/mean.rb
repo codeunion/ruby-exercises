@@ -22,11 +22,29 @@
 require_relative './sum'
 
 def mean(list)
-  total = sum(list) # This is the "sum" method from our sum.rb file
-  # result = ____   # Given we have the sum of the list, how can we calculate the average?
+  # total = sum(list) # This is the "sum" method from our sum.rb file
+  # result = total/list.length # Given we have the sum of the list, how can we calculate the average?
+  # result
+  if list.length == 0
+    return puts "List is empty."
+  elsif sum(list) == 0
+    return puts "Sum of list is 0. I can't divide by 0."
+  else
+    sum(list)/list.length 
+  end
+  
 end
 
 if __FILE__ == $0
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
+  p mean([10, 10, 10, 10]) == 10 
+  p mean([-1]) == -1 
+  p mean([-1, -1, -2, -4]) == -2 
+  p mean([1.5, 1.5, 2.5, 3.75]) == 2.3125
+  p mean([0]) == 0 # Can't divide by zero - I could put an error handler in if sum(list)==0 p "can't divide by zero"
+  p mean([]) == 0 # Can't handle empy array - I could add an error handler
+  
+  # Having trouble getting the output to look nice with my error handler. I'll come back to it when I know more.
+  
 end

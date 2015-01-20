@@ -21,7 +21,13 @@
 
 def sum(list)
   # This is your job. :)
+  total = 0
+  list.each do |item|
+    total += item
+  end
+  total
 end
+
 
 if __FILE__ == $0
   p sum([1]) == 1
