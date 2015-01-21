@@ -6,7 +6,7 @@
 # See: https://www.freemathhelp.com/arithmetic-mean.html
 #
 # For example,
-#   The mean of 5 and 2 is 2.5 since (5 + 2)/2 is 2.5
+#   The mean of 5 and 2 is 2.5 since (5 + 2)/2 is 3.5
 #   The mean of 5 and 5 is 5.0 since (5 + 5)/2 is 5.0
 #   The mean of 10, 20, and 30 is 20.0 since (10 + 20 + 30)/3 is 20.0
 #   etc.
@@ -24,9 +24,12 @@ require_relative './sum'
 def mean(list)
   total = sum(list) # This is the "sum" method from our sum.rb file
   # result = ____   # Given we have the sum of the list, how can we calculate the average?
+
+  result = total.to_f / list.length # Convert to float in order to return a floating point number; No need to explicitly return
 end
 
 if __FILE__ == $0
-  # I'd advise putting some sanity checks here.
-  # How else will you be sure your code does what you think it does?
+  p mean([5, 2]) == 3.5
+  p mean([5, 5]) == 5.0
+  p mean([10, 20, 30]) == 20.0
 end
