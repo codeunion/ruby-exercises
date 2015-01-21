@@ -13,14 +13,14 @@
 # This is going to be very similar to max, so don't be afraid if
 # these two methods look almost identical
 def min(list)
-  ____ = ____
-  ____.each do |____|
-    if ____
-      ____ = ____
+  current_min = list.first  # Assigning a value to current min so you can compare (it can by any number)
+  list.each do |num|
+    if num < current_min    # Determining whether the current number in the loop is smaller than the current_min
+      current_min = num     # If it is smaller, the new current_min is the smaller number
     end
   end
 
-  return ____
+  return current_min
 end
 
 if __FILE__ == $0
