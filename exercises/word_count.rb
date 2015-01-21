@@ -3,7 +3,7 @@
 # Returns: The number of words in the sentence
 # Prints: Nothing
 #
-# Although it's more complicated in relaity, we'll just pretend
+# Although it's more complicated in reality, we'll just pretend
 # that sequence of spaces in a sentence designates the start of a new word.
 # That means we don't care about how many spaces are between two words, only
 # that there is at least one.
@@ -11,6 +11,13 @@
 def word_count(string)
   # Hint: You'll want to use String#split
   # See: http://www.ruby-doc.org/core-2.1.2/String.html#method-i-split
+
+  # The below breaks out the string (splits by spaces) and assigns the
+  # length to the number_of_words variable. Because the last line
+  # is what is always returned in a method, there is no need to explicitly
+  # type 'return number_of_words' separately.
+
+  number_of_words = string.split.length 
 end
 
 if __FILE__ == $0
