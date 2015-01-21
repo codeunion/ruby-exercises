@@ -3,7 +3,7 @@
 # Returns: The number of words in the sentence
 # Prints: Nothing
 #
-# Although it's more complicated in relaity, we'll just pretend
+# Although it's more complicated in reality, we'll just pretend
 # that sequence of spaces in a sentence designates the start of a new word.
 # That means we don't care about how many spaces are between two words, only
 # that there is at least one.
