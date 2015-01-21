@@ -23,10 +23,9 @@ def longest_string(list)
 end
 
 if __FILE__ == $0
-  # I'd advise putting some sanity checks here.
-  # How else will you be sure your code does what you think it does?
+  p longest_string(["a", "zzzz", "cc"]) == "zzzz" 
+  p longest_string(["hello", "my", "name", "is", "John"]) == "hello"
+  p longest_string(["one", "thirteen", "four", "hundred"]) == "thirteen"
 end
 
-p longest_string(["a", "zzzz", "cc"]) == "zzzz" 
-p longest_string(["hello", "my", "name", "is", "John"]) == "hello"
-p longest_string(["one", "thirteen", "four", "hundred"]) == "thirteen"
+
