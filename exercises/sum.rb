@@ -9,7 +9,7 @@
 # Things we'll need:
 #   1. Something to keep track of the running total
 #   2. Something that goes through the list one number at a time
-#   3. Something that adds the current number to the running totao
+#   3. Something that adds the current number to the running total
 #
 # For (3), consider these bits of Ruby:
 #   total = 10           # assign the value 10 to the variable "total"
