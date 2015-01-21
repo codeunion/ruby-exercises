@@ -13,6 +13,10 @@
 # The print_line method is here to help you.
 # Conceptually, it prints out a row of "count" *'s.  Run it yourself to
 # see how it works.  Experiment with different inputs.
+
+# Again, for the below, why can we use, instead of a (1..count).each, 
+# count.times or just "puts '*' * count" ?
+
 def print_line(count)
   (1..count).each do |i|
     print "*"         # This prints a single "*"
@@ -22,7 +26,9 @@ def print_line(count)
 end
 
 def print_triangle(height)
-  # You have to fill in the details here.
+  (1..height).each do |n|
+    print_line(n)           # I understand this conceptually but hard to know whether I would have been
+  end                       # able to figure this out on my own.
 end
 
 # There are no rumble strips this time.  It's up to you to decide whether
