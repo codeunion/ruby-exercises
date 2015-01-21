@@ -6,7 +6,7 @@
 # See: https://www.freemathhelp.com/arithmetic-mean.html
 #
 # For example,
-#   The mean of 5 and 2 is 2.5 since (5 + 2)/2 is 2.5
+#   The mean of 5 and 2 is 2.5 since (5 + 2)/2 is 3.5
 #   The mean of 5 and 5 is 5.0 since (5 + 5)/2 is 5.0
 #   The mean of 10, 20, and 30 is 20.0 since (10 + 20 + 30)/3 is 20.0
 #   etc.
