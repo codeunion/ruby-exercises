@@ -20,12 +20,21 @@
 require_relative './print_triangle'
 
 def print_pyramid(height)
-  # This is your job. :)
-  # Suggestion: you can call print_triangle to print out the first, "upward" half of the pyramid
-  # You'll have to write code to print out the second, "downward" half of the pyramid.
+  print_triangle(height)
+
+  countdown = (height - 1)
+
+  countdown.times do             # I have no idea if this is a really convoluted way of accomplishing this.
+    if countdown > 0             # This is the only way I can write this code and conceptualize.
+      print_line(countdown)      # Is there a better way?
+      countdown -= 1
+    end
+  end
+
 end
 
 if __FILE__ == $0
-  # I'd advise putting some sanity checks here.
-  # How else will you be sure your code does what you think it does?
+  print_pyramid(5)
+  print "\n\n\n"
+  print_pyramid(10)
 end
