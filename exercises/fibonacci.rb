@@ -30,7 +30,7 @@
 def fib(n)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Here are our sanity checks with justification.
 
   # These are the two "base cases", so if anything is wrong here,

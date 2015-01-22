@@ -35,7 +35,7 @@ end
 #  array.push("apple")
 #  array == [1,2,3,"apple"]
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Here are some sanity checks written in "plain English".
   # See if you can translate them into Ruby. Your checks should look like
   #
@@ -46,7 +46,7 @@ if __FILE__ == $0
 
   # If the input array contains all EVEN numbers,
   #   find_even should return the input array
-  p find_even([2,4,6,8,10]) == [2,4,6,8,10]
+  p find_even([2, 4, 6, 8, 10]) == [2, 4, 6, 8, 10]
 
   # If the input array contains all ODD numbers,
   #   find_even should return the empty array

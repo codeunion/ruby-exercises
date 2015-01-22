@@ -3,8 +3,8 @@
 # Returns:     An array of all link URLs on the input website
 # Prints:      Nothing
 
-require 'open-uri'
-require 'nokogiri'
+require "open-uri"
+require "nokogiri"
 
 # Note #1
 # You'll need to install the nokogiri gem if you haven't, yet.  Run this

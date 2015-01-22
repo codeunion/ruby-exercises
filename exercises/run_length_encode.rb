@@ -40,18 +40,18 @@
 # the image before transmitting over the phone line, since faxed documents tend
 # to be almost entirely white.  So this isn't just a "toy problem.""
 
-
 def run_length_encode(string)
 end
 
-# If you want to iterate over each character in a string, look at String#each_char
-# http://ruby-doc.org/core-2.1.0/String.html#method-i-each_char
+# If you want to iterate over each character in a string, look at
+# String#each_char:
+#   http://ruby-doc.org/core-2.1.0/String.html#method-i-each_char
 #
 # string.each_char do |c|
 #   puts "Character is #{c}"
 # end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   p run_length_encode("WWWWWWAAAAAAWWWWWWAAAAAABBBBBB") == "6W6A6W6A6B"
   p run_length_encode("A") == "1A"
   p run_length_encode("AB") == "1A1B"

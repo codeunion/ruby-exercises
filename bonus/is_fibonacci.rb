@@ -10,8 +10,8 @@
 #   http://cl.ly/image/1z3b3y41130b
 # This can calculate is_fibonacci?(fib(2**18)) in ~0.9 seconds.
 
-require 'benchmark'
-require_relative 'fast_fib'
+require "benchmark"
+require_relative "fast_fib"
 
 BIG_FIB_INPUT = 2**18
 
@@ -28,7 +28,7 @@ end
 # Print out some friendly usage information
 def show_usage!
   puts "Usage:"
-  puts "  #{$0} <number-to-test>"
+  puts "  #{$PROGRAM_NAME} <number-to-test>"
   puts ""
   puts "Options:"
   puts "  -t, --test        Run PASS/FAIL tests"
@@ -62,13 +62,13 @@ end
 # Run our test suite
 def run_tests!
   puts "Testing with Fibonacci inputs"
-  [0,1,2,3,5,39088169].each do |n|
+  [0, 1, 2, 3, 5, 39088169].each do |n|
     assert_equal(true, is_fibonacci?(n), "is_fibonacci?(#{n}) is true")
   end
 
   puts ""
   puts "Testing with non-Fibonacci inputs"
-  [4,6,7,10,39088169 - 1].each do |n|
+  [4, 6, 7, 10, 39088169 - 1].each do |n|
     assert_equal(false, is_fibonacci?(n), "is_fibonacci?(#{n}) is false")
   end
 
@@ -80,8 +80,11 @@ def run_tests!
 
   puts "done"
 
-  assert_equal(true, is_fibonacci?(big_fib), "is_fibonacci?(fib(#{BIG_FIB_INPUT})) is true")
-  assert_equal(false, is_fibonacci?(big_not_fib), "is_fibonacci?(fib(#{BIG_FIB_INPUT}) + 100) is false")
+  assert_equal(true, is_fibonacci?(big_fib),
+               "is_fibonacci?(fib(#{BIG_FIB_INPUT})) is true")
+
+  assert_equal(false, is_fibonacci?(big_not_fib),
+               "is_fibonacci?(fib(#{BIG_FIB_INPUT}) + 100) is false")
 end
 
 # Helper method for testing purposes
@@ -98,13 +101,13 @@ def assert_equal(expected, actual, msg)
   assert(expected == actual, msg)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   case ARGV[0]
-  when '-h', '--help', '', nil
+  when "-h", "--help", "", nil
     show_usage!
-  when '-b', '--bench'
+  when "-b", "--bench"
     run_benchmarks!
-  when '-t', '--test'
+  when "-t", "--test"
     run_tests!
   else
     puts is_fibonacci?(ARGV[0].to_i)

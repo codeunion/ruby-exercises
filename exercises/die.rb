@@ -1,7 +1,7 @@
 # Classes: Die
 
 # Your job is to implement the Die#roll instance method.  We've hard-coded
-# the number of sides and assigned it to the @sides instance variable —
+# the number of sides and assigned it to the @sides instance variable --
 # don't change that!
 
 # Die#roll should return a random number between 1 and the value of
@@ -19,12 +19,11 @@ class Die
   end
 end
 
-
 # Don't change any of this code.  It's here to tell you when your method isn't
 # working.  Since we're dealing with random behavior, there's a (small) chance
 # that this code will run even if your Die#roll method isn't working.
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   roll_count = 20
   die = Die.new
 
@@ -34,7 +33,8 @@ if __FILE__ == $0
   1.upto(roll_count) do |i|
     result = die.roll
     unless (1..6).include?(result)
-      raise "die.roll returned #{result.inspect}, but it must return a number between 1 and 6 (inclusive)"
+      fail "die.roll returned #{result.inspect}, " \
+            "but it must return a number between 1 and 6 (inclusive)"
     else
       puts "Roll #{i}: #{result}"
     end

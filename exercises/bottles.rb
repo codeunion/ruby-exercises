@@ -29,7 +29,7 @@
 def bottles(start_number)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # What *should* this print?
   bottles(5)
 end

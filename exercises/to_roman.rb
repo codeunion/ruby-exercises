@@ -15,6 +15,6 @@
 def to_roman(num)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # What are some test cases?
 end

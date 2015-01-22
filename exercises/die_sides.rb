@@ -20,8 +20,7 @@ class Die
   end
 end
 
-
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   die_10 = Die.new(10)
   die_20 = Die.new(20)
   die_6  = Die.new(6)

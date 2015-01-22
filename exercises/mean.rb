@@ -19,14 +19,14 @@
 
 # This is how we require the sum.rb file in the current folder.
 # We can now use the "sum" method we defined there as if we defined it here!
-require_relative './sum'
+require_relative "./sum"
 
 def mean(list)
   total = sum(list) # This is the "sum" method from our sum.rb file
-  # result = ____   # Given we have the sum of the list, how can we calculate the average?
+  # result = ____   # Given the list's sum, how can we calculate the average?
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
 end

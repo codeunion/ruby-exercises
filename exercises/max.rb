@@ -7,9 +7,10 @@
 # returns the largest number in that list.
 
 # Note: This exercise is "complete."
-# This is meant to give you a starting point and also illustrate what we're looking for.
-# There is ***NO NEED*** to comment line-by-line, although it can't hurt.
-# It's not common in everyday, professional Ruby, but here we're in a learning environment.
+# This is meant to give you a starting point and also illustrate what we're
+# looking for. There is ***NO NEED*** to comment line-by-line, although it
+# can't hurt. It's not common in everyday, professional Ruby, but here we're in
+# a learning environment.
 
 def max(list)
   max_so_far = list.first  # or, equivalently, list[0]
@@ -21,7 +22,6 @@ def max(list)
 
   return max_so_far        # we've gone through entire list, return max so far
 end
-
 
 # This "if" statement will be gobblededook, but it means:
 #   "If this file is the file currently being executed, then..."
@@ -37,17 +37,17 @@ end
 #     require 'max'
 # then the below will *not* be executed
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # "p" prints something to the screen in a way that's better for debugging
 
-  p max([1,2,3]) == 3
+  p max([1, 2, 3]) == 3
   p max([0, -100, 50, -200]) == 50
   p max([-200, -400, -100, -300]) == -100
   p max([0]) == 0
   p max([1]) == 1
   p max([-1]) == -1
-  p max([11,11,11]) == 11
-  p max([-22,-11,-22]) == -11
+  p max([11, 11, 11]) == 11
+  p max([-22, -11, -22]) == -11
 end
 
 # Each of the lines above will print out "true" or "false" and collectively

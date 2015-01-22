@@ -10,6 +10,6 @@
 def rot_n(string, n)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # See http://www.rot-n.com/ to generate test inputs and outputs
 end

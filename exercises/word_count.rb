@@ -13,7 +13,7 @@ def word_count(string)
   # See: http://www.ruby-doc.org/core-2.1.2/String.html#method-i-split
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   p word_count("apple") == 1
   p word_count("123...321") == 1
   p word_count("one two three") == 3

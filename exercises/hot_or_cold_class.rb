@@ -7,7 +7,6 @@
 # guess as to the number and the person will say "too hot", "spot on", or
 # "too cold", but they will never change the number in their head.
 
-
 class HotOrCold
   def initialize(number_to_guess)
     @number_to_guess = number_to_guess
@@ -21,7 +20,6 @@ class HotOrCold
   end
 end
 
-
 # A helper method to prompt the user for input and return whatever they type
 def prompt(msg)
   print "#{msg}: "
@@ -30,7 +28,7 @@ end
 
 # Don't change this code!  If your HotOrCold#hot_or_cold method is working
 # correctly, the code below will work without changing.
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   if ARGV[0]
     top_guess = ARGV[0].to_i
   else
@@ -38,14 +36,16 @@ if __FILE__ == $0
   end
 
   loop do
-    # rand(1..top_guess) returns a random number between 1 and top_guess (inclusive)
-    # See: http://www.ruby-doc.org/core-2.1.2/Random.html#method-i-rand
+    # rand(1..top_guess) returns a random number between 1 and
+    # top_guess (inclusive).  See
+    #   http://www.ruby-doc.org/core-2.1.2/Random.html#method-i-rand
     puts "Welcome to Hot or Cold!"
 
     game = HotOrCold.new(rand(1..top_guess))
 
     loop do
-      our_guess = prompt("Guess a number between 1-#{top_guess} (or type \"quit\" to quit)")
+      our_guess = prompt("Guess a number between 1-#{top_guess} " \
+                         "(or type \"quit\" to quit)")
 
       if our_guess == "quit"
         puts "Goodbye!"
@@ -64,7 +64,6 @@ if __FILE__ == $0
         puts "#{our_guess} is correct!\n\n"
         break # breaks out of the inner-most loop, taking us to line 35
       end
-
     end
   end
 end

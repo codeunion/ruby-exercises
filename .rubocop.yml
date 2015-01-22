@@ -1,0 +1,44 @@
+# Increase permitted ABC size
+Metrics/AbcSize:
+  Max: 20
+
+# Allow methods of up to 20 lines of code
+Metrics/MethodLength:
+  Max: 20
+
+# Don't enforce top-level class and module documentation
+Style/Documentation:
+  Enabled: false
+
+# Don't enforce "loop do" for infinite loops
+Style/InfiniteLoop:
+  Enabled: false
+
+# Don't enforce underscores for large numeric values
+Style/NumericLiterals:
+  Enabled: false
+
+# Don't enforce prefix-free predicate methods
+Style/PredicateName:
+  Enabled: false
+
+# Don't enforce implicit return
+Style/RedundantReturn:
+  Enabled: false
+
+# Don't enforce implicit self
+Style/RedundantSelf:
+  Enabled: false
+
+# Prefer double quoted string literals
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+
+# Don't enforce attr_* for trivial readers/writers
+Style/TrivialAccessors:
+  Enabled: false
+
+# Don't enforce %w and %W for word arrays
+Style/WordArray:
+  Enabled: false

@@ -19,8 +19,8 @@
 
 # In short, you should imagine an empty chess-like board absent the idea
 # that you're playing chess or any other game.  You can place and remove
-# whatever you want from each square — chess pieces, paper scraps, coins, etc. —
-# but you can only place one thing on each square.
+# whatever you want from each square -- chess pieces, paper scraps,
+# coins, etc. -- but you can only place one thing on each square.
 
 # In code, we'll be representing a "piece" by a single-character string like
 # "X", "O", "K", "Q", "N", etc.
@@ -49,15 +49,17 @@ class Board
   # Place a "piece" on the board at (row, column)
   def place(row, column, piece)
     if row >= self.rows
-      raise "Board has #{self.rows} rows and index #{row} is out of bounds."
+      fail "Board has #{self.rows} rows and index #{row} is out of bounds."
     end
 
     if row >= self.rows
-      raise "Board has #{self.columns} columns and index #{column} is out of bounds."
+      fail "Board has #{self.columns} columns and " \
+            "index #{column} is out of bounds."
     end
 
-    if @board[row][column] != nil
-      raise "Cannot place #{piece.inspect} at row #{row}, column #{column}: #{@board[row][column].inspect} is already there."
+    unless @board[row][column].nil?
+      fail "Cannot place #{piece.inspect} at row #{row}, column #{column}: " \
+            "#{@board[row][column].inspect} is already there."
     end
 
     @board[row][column] = piece
@@ -99,7 +101,7 @@ def print_board(board)
     board.columns.times do |column|
       piece = board.at(row, column)
 
-      if piece == nil
+      if piece.nil?
         piece = " " # Display empty cells as spaces
       end
 
@@ -108,17 +110,16 @@ def print_board(board)
 
     print "\n"
   end
-
 end
 
 # Don't change this code, either!
 # See http://cl.ly/image/3t450Y271d25 for expected output
-if __FILE__ == $0
-  board = Board.new(4,4)
-  board.place(0,0,"X")
-  board.place(1,1,"O")
-  board.place(2,2,"X")
-  board.place(3,3,"#")
+if __FILE__ == $PROGRAM_NAME
+  board = Board.new(4, 4)
+  board.place(0, 0, "X")
+  board.place(1, 1, "O")
+  board.place(2, 2, "X")
+  board.place(3, 3, "#")
 
   print_board(board)
 end

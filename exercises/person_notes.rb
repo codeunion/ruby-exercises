@@ -3,8 +3,8 @@
 # We're going to learn how to define classes in Ruby and create custom
 # Ruby objects from those classes.
 #
-# Note: This file is here to help you better understand the idea of object-oriented
-#       programming.  You can do your work in person.rb.
+# Note: This file is here to help you better understand the idea of
+#       object-oriented programming.  You can do your work in person.rb.
 #
 # Classes and objects were invented to model "real-world" situations in
 # in a way more familiar to people.  For example, below we are defining
@@ -75,7 +75,7 @@ class Person
   end
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   print "Enter your first name: "
   first_name = gets.chomp
 

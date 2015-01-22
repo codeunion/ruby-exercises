@@ -23,7 +23,7 @@
 def pad_array(array, min_size, pad_with)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Here are some sanity checks written in "plain English".
   # See if you can translate them into Ruby. Your checks should look like
   #

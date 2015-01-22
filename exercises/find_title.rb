@@ -3,7 +3,7 @@
 # Returns:     The contents of the <title>...</title> tag at that URL
 # Prints:      Nothing
 
-require 'open-uri'
+require "open-uri"
 
 # Note #1
 # open-uri allows us to download the contents of any URL using the "open" method
@@ -14,7 +14,6 @@ require 'open-uri'
 # https://www.google.com. open-uri comes with Ruby, so you DO NOT need to
 # install anything extra.
 
-
 def find_title(url)
   # In three "easy" steps:
   #   1. Use "open" to download the contents of URL
@@ -23,12 +22,14 @@ def find_title(url)
   #   3. Return the contents of the title tag.
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Some sanity checks!
 
   p find_title("https://www.google.com") == "Google"
   p find_title("https://www.yahoo.com") == "Yahoo"
-  p find_title("https://www.facebook.com") == "Welcome to Facebook - Log In, Sign Up or Learn More"
+
+  p find_title("https://www.facebook.com") ==
+    "Welcome to Facebook - Log In, Sign Up or Learn More"
 end
 
 # Note #2
