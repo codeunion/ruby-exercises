@@ -6,6 +6,10 @@ Style/Documentation:
 Style/NumericLiterals:
   Enabled: false
 
+# Don't enforce implicit return
+Style/RedundantReturn:
+  Enabled: false
+
 # Don't enforce explicit self
 Style/RedundantSelf:
   Enabled: false
