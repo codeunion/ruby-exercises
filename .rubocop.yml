@@ -10,6 +10,10 @@ Metrics/MethodLength:
 Style/Documentation:
   Enabled: false
 
+# Don't enforce "loop do" for infinite loops
+Style/InfiniteLoop:
+  Enabled: false
+
 # Don't enforce underscores for large numeric values
 Style/NumericLiterals:
   Enabled: false
