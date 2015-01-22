@@ -40,7 +40,6 @@
 # the image before transmitting over the phone line, since faxed documents tend
 # to be almost entirely white.  So this isn't just a "toy problem.""
 
-
 def run_length_encode(string)
 end
 

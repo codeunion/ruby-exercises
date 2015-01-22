@@ -19,7 +19,6 @@
 # "ROT13" is called a Caesar cipher because Julius Caesar used such letter
 # replacement schemes to "encrypt" his communication.
 
-
 def rot13(string)
 end
 

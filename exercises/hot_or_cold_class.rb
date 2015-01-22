@@ -7,7 +7,6 @@
 # guess as to the number and the person will say "too hot", "spot on", or
 # "too cold", but they will never change the number in their head.
 
-
 class HotOrCold
   def initialize(number_to_guess)
     @number_to_guess = number_to_guess
@@ -20,7 +19,6 @@ class HotOrCold
     # Hint: we'll ened to be comparing number to @number_to_guess
   end
 end
-
 
 # A helper method to prompt the user for input and return whatever they type
 def prompt(msg)
@@ -66,7 +64,6 @@ if __FILE__ == $PROGRAM_NAME
         puts "#{our_guess} is correct!\n\n"
         break # breaks out of the inner-most loop, taking us to line 35
       end
-
     end
   end
 end

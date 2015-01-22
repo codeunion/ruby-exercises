@@ -110,7 +110,6 @@ def print_board(board)
 
     print "\n"
   end
-
 end
 
 # Don't change this code, either!
