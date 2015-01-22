@@ -1,3 +1,7 @@
+# Don't enforce top-level class and module documentation
+Style/Documentation:
+  Enabled: false
+
 # Don't enforce underscores for large numeric values
 Style/NumericLiterals:
   Enabled: false
