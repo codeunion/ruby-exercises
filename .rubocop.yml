@@ -2,7 +2,7 @@
 Style/NumericLiterals:
   Enabled: false
 
-# Permit use of self for the sake of explicitness
+# Don't enforce explicit self
 Style/RedundantSelf:
   Enabled: false
 
