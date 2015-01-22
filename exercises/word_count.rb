@@ -10,8 +10,8 @@
 def word_count(string)
   words = string.split(/\W+/) #split on any non-word char. Thanks Rubular.com!
   #Using \b counts even spaces as "words".  Using \W counts ... as three words.
-  #I think \W is better for now. Otherwise... I wonder if \W+ would work at all? YES.
-    words.length #return length
+  #\W+ splits on one or more of any non-word character
+  words.length #return length
 end
 #Tests:
 if __FILE__ == $0
