@@ -21,9 +21,35 @@ def count_max(list)
   # trying. The "requite_relative" statements above make them available to us, here.
   #
   # But remember: inelegant, working code is better than elegant, unfinished code.
+
+
+  # OPTION 1 USING COUNT_IN_LIST AND MAX METHODS
+
+  number_of_times = count_in_list(list, max(list))
+
+  # OPTION 2 MANUALLY LOOPING THROUGH LIST
+
+  num = list.first
+  max_count = 0
+
+  list.each do |x|    # Finds the largest number in the list
+    if x > num
+      num = x
+    end
+  end
+
+  list.each do |x|    # Finds the amount of times the largest number is in the list
+    if x == num
+      max_count += 1  # Adds 1 to the count each time it finds the largets number
+    end
+  end
+
+  return number_of_times
+  # return max_count
+
 end
 
 if __FILE__ == $0
-  # I'd advise putting some sanity checks here.
-  # How else will you be sure your code does what you think it does?
+  p count_max([10, 1,2,10,10]) == 3
+  p count_max([100, 20, 1, 1, 1, 300, 2, 300]) == 2
 end

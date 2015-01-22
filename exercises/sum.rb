@@ -21,6 +21,14 @@
 
 def sum(list)
   # This is your job. :)
+  total = 0
+
+  list.each do |num|
+    total += num        # Adds the current number to the running total variable
+  end
+    
+  return total
+
 end
 
 if __FILE__ == $0
