@@ -57,7 +57,7 @@ class Board
             "index #{column} is out of bounds."
     end
 
-    if @board[row][column] != nil
+    unless @board[row][column].nil?
       raise "Cannot place #{piece.inspect} at row #{row}, column #{column}: " \
             "#{@board[row][column].inspect} is already there."
     end
@@ -101,7 +101,7 @@ def print_board(board)
     board.columns.times do |column|
       piece = board.at(row, column)
 
-      if piece == nil
+      if piece.nil?
         piece = " " # Display empty cells as spaces
       end
 
