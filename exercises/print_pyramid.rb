@@ -17,7 +17,7 @@
 # We can now use the "print_triangle" and "print_line" methods we defined
 # there — as if we defined them here!
 
-require_relative './print_triangle'
+require_relative "./print_triangle"
 
 def print_pyramid(height)
   # This is your job. :)

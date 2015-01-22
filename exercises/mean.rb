@@ -19,7 +19,7 @@
 
 # This is how we require the sum.rb file in the current folder.
 # We can now use the "sum" method we defined there as if we defined it here!
-require_relative './sum'
+require_relative "./sum"
 
 def mean(list)
   total = sum(list) # This is the "sum" method from our sum.rb file

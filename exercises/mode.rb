@@ -43,10 +43,10 @@ if __FILE__ == $PROGRAM_NAME
   p mode([-1234.50]) == -1234.50
 
   # The mode of identical data points should be that data point
-  p mode(['hello']*100) == 'hello'
+  p mode(["hello"]*100) == "hello"
 
   # The mode doesn't depend on the order of the data
-  p mode(['a', 'a', 'a', 'b']) == 'a'
-  p mode(['b', 'a', 'a', 'a']) == 'a'
-  p mode(['a', 'b', 'a', 'a']) == 'a'
+  p mode(["a", "a", "a", "b"]) == "a"
+  p mode(["b", "a", "a", "a"]) == "a"
+  p mode(["a", "b", "a", "a"]) == "a"
 end

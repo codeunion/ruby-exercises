@@ -3,7 +3,7 @@
 # Returns:     The contents of the <title>...</title> tag at that URL
 # Prints:      Nothing
 
-require 'open-uri'
+require "open-uri"
 
 # Note #1
 # open-uri allows us to download the contents of any URL using the "open" method

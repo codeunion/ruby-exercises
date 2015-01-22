@@ -10,8 +10,8 @@
 #   http://cl.ly/image/1z3b3y41130b
 # This can calculate is_fibonacci?(fib(2**18)) in ~0.9 seconds.
 
-require 'benchmark'
-require_relative 'fast_fib'
+require "benchmark"
+require_relative "fast_fib"
 
 BIG_FIB_INPUT = 2**18
 
@@ -100,11 +100,11 @@ end
 
 if __FILE__ == $PROGRAM_NAME
   case ARGV[0]
-  when '-h', '--help', '', nil
+  when "-h", "--help", "", nil
     show_usage!
-  when '-b', '--bench'
+  when "-b", "--bench"
     run_benchmarks!
-  when '-t', '--test'
+  when "-t", "--test"
     run_tests!
   else
     puts is_fibonacci?(ARGV[0].to_i)
