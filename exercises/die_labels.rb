@@ -20,7 +20,7 @@ def prompt(msg)
   gets.chomp
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Examples of what we mean by "returning a random label":
   # normal_die = Die.new([1,2,3,4,5,6])
   # letter_die = Die.new(['A', 'B', 'C', 'D'])

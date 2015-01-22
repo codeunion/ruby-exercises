@@ -51,7 +51,7 @@ end
 #   puts "Character is #{c}"
 # end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   p run_length_encode("WWWWWWAAAAAAWWWWWWAAAAAABBBBBB") == "6W6A6W6A6B"
   p run_length_encode("A") == "1A"
   p run_length_encode("AB") == "1A1B"

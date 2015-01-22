@@ -40,7 +40,7 @@ def hot_or_cold(num_to_guess)
   end
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # rand(1000) returns a random integer between 0 and 999, so this method call
   # starts the "Hot or Cold" game with a random number to guess.
 

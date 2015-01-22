@@ -17,7 +17,7 @@
 def pig_latin(word)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   p pig_latin("happy") == "appyhay"
   p pig_latin("duck")  == "uckday"
   p pig_latin("glove") == "oveglay" # Notice what happened to "gl"

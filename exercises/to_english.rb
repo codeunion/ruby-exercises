@@ -23,6 +23,6 @@
 def to_english(string)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Hey, there are a bunch of lovely test cases above.  Start with those. :)
 end

@@ -35,7 +35,7 @@ end
 #  array.push("apple")
 #  array == [1,2,3,"apple"]
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Here are some sanity checks written in "plain English".
   # See if you can translate them into Ruby. Your checks should look like
   #

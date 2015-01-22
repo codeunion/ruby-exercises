@@ -75,7 +75,7 @@ class Person
   end
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   print "Enter your first name: "
   first_name = gets.chomp
 

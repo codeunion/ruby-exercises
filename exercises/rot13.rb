@@ -23,7 +23,7 @@
 def rot13(string)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # See http://www.rot-n.com/ to generate test inputs and outputs
   p rot13("The Quick Brown Fox Jumps Over The Lazy Dog") == "Gur Dhvpx Oebja Sbk Whzcf Bire Gur Ynml Qbt"
 end

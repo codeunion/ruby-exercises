@@ -23,7 +23,7 @@ def find_title(url)
   #   3. Return the contents of the title tag.
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Some sanity checks!
 
   p find_title("https://www.google.com") == "Google"

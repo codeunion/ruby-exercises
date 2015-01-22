@@ -24,7 +24,7 @@ end
 # working.  Since we're dealing with random behavior, there's a (small) chance
 # that this code will run even if your Die#roll method isn't working.
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   roll_count = 20
   die = Die.new
 

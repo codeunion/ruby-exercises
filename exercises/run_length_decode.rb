@@ -8,7 +8,7 @@
 def run_length_decode(string)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Write your own sanity tests here.
   # They should be the mirror image of the tests for run_length_encode
   #

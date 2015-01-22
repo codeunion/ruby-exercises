@@ -25,7 +25,7 @@ def print_pyramid(height)
   # You'll have to write code to print out the second, "downward" half of the pyramid.
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
 end

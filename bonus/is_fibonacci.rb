@@ -28,7 +28,7 @@ end
 # Print out some friendly usage information
 def show_usage!
   puts "Usage:"
-  puts "  #{$0} <number-to-test>"
+  puts "  #{$PROGRAM_NAME} <number-to-test>"
   puts ""
   puts "Options:"
   puts "  -t, --test        Run PASS/FAIL tests"
@@ -98,7 +98,7 @@ def assert_equal(expected, actual, msg)
   assert(expected == actual, msg)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   case ARGV[0]
   when '-h', '--help', '', nil
     show_usage!

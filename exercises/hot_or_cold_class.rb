@@ -30,7 +30,7 @@ end
 
 # Don't change this code!  If your HotOrCold#hot_or_cold method is working
 # correctly, the code below will work without changing.
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   if ARGV[0]
     top_guess = ARGV[0].to_i
   else

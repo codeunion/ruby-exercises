@@ -37,7 +37,7 @@ end
 #     require 'max'
 # then the below will *not* be executed
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # "p" prints something to the screen in a way that's better for debugging
 
   p max([1,2,3]) == 3

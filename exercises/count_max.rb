@@ -23,7 +23,7 @@ def count_max(list)
   # But remember: inelegant, working code is better than elegant, unfinished code.
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
 end

@@ -18,7 +18,7 @@
 def mode(array)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Write some of your own "sanity checks" here.  Each check should look like:
   #
   #  p mode([...data points...]) == ...expected return value...

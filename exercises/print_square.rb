@@ -33,7 +33,7 @@ end
 # There are no rumble strips this time.  It's up to you to decide whether
 # this is working as intended or not.
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   print_square(1)
 
   print "\n\n\n" # This is here just to make the separation between squares clearer

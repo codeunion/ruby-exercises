@@ -15,7 +15,7 @@
 def time_format(seconds)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # Write your own test cases!  These four won't suffice.
   # Notice that we're looking at "edge" cases. We likely want to test
   # the boundaries where the parts "flip over", and also one output on

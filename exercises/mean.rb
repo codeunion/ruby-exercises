@@ -26,7 +26,7 @@ def mean(list)
   # result = ____   # Given we have the sum of the list, how can we calculate the average?
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
 end

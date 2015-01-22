@@ -16,7 +16,7 @@
 def factorial(n)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   # What are the common cases?  What are the corner cases?
   # Your sanity checks should look like
   #   p factorial(input) == ...expected return value...

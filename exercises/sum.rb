@@ -23,7 +23,7 @@ def sum(list)
   # This is your job. :)
 end
 
-if __FILE__ == $0
+if __FILE__ == $PROGRAM_NAME
   p sum([1]) == 1
   p sum([0]) == 0
   p sum([-1]) == -1
