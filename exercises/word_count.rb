@@ -9,8 +9,8 @@
 # that there is at least one.
 
 def word_count(string)
-  # Hint: You'll want to use String#split
-  # See: http://www.ruby-doc.org/core-2.1.2/String.html#method-i-split
+  all_the_words = string.split
+  return all_the_words.count
 end
 
 if __FILE__ == $0
@@ -21,6 +21,7 @@ if __FILE__ == $0
   p word_count("No-spaces-here") == 1
   p word_count("") == 0  # Empty string
   p word_count(" ") == 0 # A string consisting of a single space
+  p word_count("   this   is a crazy    sentence   .") == 6
 
   # It's probably worth having a few more sanity checks.
   # What are some input strings that might be tricky to handle?
