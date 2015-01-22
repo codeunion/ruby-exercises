@@ -28,7 +28,9 @@ if __FILE__ == $PROGRAM_NAME
 
   p find_title("https://www.google.com") == "Google"
   p find_title("https://www.yahoo.com") == "Yahoo"
-  p find_title("https://www.facebook.com") == "Welcome to Facebook - Log In, Sign Up or Learn More"
+
+  p find_title("https://www.facebook.com") ==
+    "Welcome to Facebook - Log In, Sign Up or Learn More"
 end
 
 # Note #2

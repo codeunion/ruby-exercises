@@ -23,7 +23,7 @@ require_relative "./sum"
 
 def mean(list)
   total = sum(list) # This is the "sum" method from our sum.rb file
-  # result = ____   # Given we have the sum of the list, how can we calculate the average?
+  # result = ____   # Given the list's sum, how can we calculate the average?
 end
 
 if __FILE__ == $PROGRAM_NAME

@@ -44,8 +44,9 @@
 def run_length_encode(string)
 end
 
-# If you want to iterate over each character in a string, look at String#each_char
-# http://ruby-doc.org/core-2.1.0/String.html#method-i-each_char
+# If you want to iterate over each character in a string, look at
+# String#each_char:
+#   http://ruby-doc.org/core-2.1.0/String.html#method-i-each_char
 #
 # string.each_char do |c|
 #   puts "Character is #{c}"

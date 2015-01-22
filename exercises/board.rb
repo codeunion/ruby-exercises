@@ -53,11 +53,13 @@ class Board
     end
 
     if row >= self.rows
-      raise "Board has #{self.columns} columns and index #{column} is out of bounds."
+      raise "Board has #{self.columns} columns and " \
+            "index #{column} is out of bounds."
     end
 
     if @board[row][column] != nil
-      raise "Cannot place #{piece.inspect} at row #{row}, column #{column}: #{@board[row][column].inspect} is already there."
+      raise "Cannot place #{piece.inspect} at row #{row}, column #{column}: " \
+            "#{@board[row][column].inspect} is already there."
     end
 
     @board[row][column] = piece

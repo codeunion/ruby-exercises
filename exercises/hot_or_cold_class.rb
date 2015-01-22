@@ -38,14 +38,16 @@ if __FILE__ == $PROGRAM_NAME
   end
 
   loop do
-    # rand(1..top_guess) returns a random number between 1 and top_guess (inclusive)
-    # See: http://www.ruby-doc.org/core-2.1.2/Random.html#method-i-rand
+    # rand(1..top_guess) returns a random number between 1 and
+    # top_guess (inclusive).  See
+    #   http://www.ruby-doc.org/core-2.1.2/Random.html#method-i-rand
     puts "Welcome to Hot or Cold!"
 
     game = HotOrCold.new(rand(1..top_guess))
 
     loop do
-      our_guess = prompt("Guess a number between 1-#{top_guess} (or type \"quit\" to quit)")
+      our_guess = prompt("Guess a number between 1-#{top_guess} " \
+                         "(or type \"quit\" to quit)")
 
       if our_guess == "quit"
         puts "Goodbye!"

@@ -61,7 +61,8 @@ end
 #
 # The question remains what each method returns, though.
 #
-#   gets() pauses program execution and waits for a user to type a string and hit enter
+#   gets() pauses program execution and waits for a user to type a string
+#   and hit enter
 #
 #   chomp() removes the new line at the end of a string, in this case
 #     corresponding to the "enter" key that our user pressed
@@ -71,7 +72,8 @@ end
 #     "10".to_i == 10
 #     "-123".to_i == -123
 #
-# So all together, gets().chomp().to_i() [1] prompts the user for input and returns
-# that input to our program as a string, [2] removes the the extra "newline character"
-# introduced because the user had to hit the enter key to send us the input, and
-# finally [3] converts the user's input from a Ruby String into a Ruby Integer.
+# So all together, gets().chomp().to_i() [1] prompts the user for input and
+# returns that input to our program as a string, [2] removes the the extra
+# "newline character" introduced because the user had to hit the enter key to
+# send us the input, and finally [3] converts the user's input from a Ruby
+# String into a Ruby Integer.

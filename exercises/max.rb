@@ -7,9 +7,10 @@
 # returns the largest number in that list.
 
 # Note: This exercise is "complete."
-# This is meant to give you a starting point and also illustrate what we're looking for.
-# There is ***NO NEED*** to comment line-by-line, although it can't hurt.
-# It's not common in everyday, professional Ruby, but here we're in a learning environment.
+# This is meant to give you a starting point and also illustrate what we're
+# looking for. There is ***NO NEED*** to comment line-by-line, although it
+# can't hurt. It's not common in everyday, professional Ruby, but here we're in
+# a learning environment.
 
 def max(list)
   max_so_far = list.first  # or, equivalently, list[0]

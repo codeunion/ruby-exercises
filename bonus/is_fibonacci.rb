@@ -80,8 +80,11 @@ def run_tests!
 
   puts "done"
 
-  assert_equal(true, is_fibonacci?(big_fib), "is_fibonacci?(fib(#{BIG_FIB_INPUT})) is true")
-  assert_equal(false, is_fibonacci?(big_not_fib), "is_fibonacci?(fib(#{BIG_FIB_INPUT}) + 100) is false")
+  assert_equal(true, is_fibonacci?(big_fib),
+               "is_fibonacci?(fib(#{BIG_FIB_INPUT})) is true")
+
+  assert_equal(false, is_fibonacci?(big_not_fib),
+               "is_fibonacci?(fib(#{BIG_FIB_INPUT}) + 100) is false")
 end
 
 # Helper method for testing purposes
