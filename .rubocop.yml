@@ -2,6 +2,10 @@
 Style/NumericLiterals:
   Enabled: false
 
+# Permit use of self for the sake of explicitness
+Style/RedundantSelf:
+  Enabled: false
+
 # Prefer double quoted string literals
 Style/StringLiterals:
   Enabled: true
