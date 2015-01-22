@@ -19,8 +19,8 @@
 
 # In short, you should imagine an empty chess-like board absent the idea
 # that you're playing chess or any other game.  You can place and remove
-# whatever you want from each square — chess pieces, paper scraps, coins, etc. —
-# but you can only place one thing on each square.
+# whatever you want from each square -- chess pieces, paper scraps,
+# coins, etc. -- but you can only place one thing on each square.
 
 # In code, we'll be representing a "piece" by a single-character string like
 # "X", "O", "K", "Q", "N", etc.

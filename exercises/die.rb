@@ -1,7 +1,7 @@
 # Classes: Die
 
 # Your job is to implement the Die#roll instance method.  We've hard-coded
-# the number of sides and assigned it to the @sides instance variable —
+# the number of sides and assigned it to the @sides instance variable --
 # don't change that!
 
 # Die#roll should return a random number between 1 and the value of

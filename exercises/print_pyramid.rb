@@ -16,7 +16,7 @@
 
 # This is how we require the print-triangle.rb file in the current folder.
 # We can now use the "print_triangle" and "print_line" methods we defined
-# there — as if we defined them here!
+# there -- as if we defined them here!
 
 require_relative "./print_triangle"
 
