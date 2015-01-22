@@ -19,7 +19,6 @@ class Die
   end
 end
 
-
 # Don't change any of this code.  It's here to tell you when your method isn't
 # working.  Since we're dealing with random behavior, there's a (small) chance
 # that this code will run even if your Die#roll method isn't working.

@@ -44,7 +44,6 @@ if __FILE__ == $PROGRAM_NAME
   # rand(1000) returns a random integer between 0 and 999, so this method call
   # starts the "Hot or Cold" game with a random number to guess.
 
-
   puts "Welcome to Hot or Cold!"
   puts "We've picked a number between 0 and 999. Can you guess it?"
   hot_or_cold(rand(1000))

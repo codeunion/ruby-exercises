@@ -14,7 +14,6 @@ require "open-uri"
 # https://www.google.com. open-uri comes with Ruby, so you DO NOT need to
 # install anything extra.
 
-
 def find_title(url)
   # In three "easy" steps:
   #   1. Use "open" to download the contents of URL
