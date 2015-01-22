@@ -13,14 +13,21 @@
 # This is going to be very similar to max, so don't be afraid if
 # these two methods look almost identical
 def min(list)
-  ____ = ____
-  ____.each do |____|
-    if ____
-      ____ = ____
+  # 1. take the first item, this is our smallest so far
+  # 2. move through the array
+  #    for each item in the array
+  # 3.  compare to the smallest so far
+  # 4.  keep the smaller value as smallest so far
+  # 5. once we're through the array, return smallest so far
+
+  min_so_far = list.first
+  list.each do |number|
+    if number < min_so_far
+      min_so_far = number
     end
   end
 
-  return ____
+  return min_so_far
 end
 
 if __FILE__ == $0
