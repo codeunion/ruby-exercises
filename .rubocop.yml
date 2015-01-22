@@ -1,3 +1,8 @@
+# Don't enforce underscores for large numeric values
+Style/NumericLiterals:
+  Enabled: false
+
+# Prefer double quoted string literals
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
