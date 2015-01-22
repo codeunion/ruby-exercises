@@ -1,3 +1,7 @@
+# Allow methods of up to 20 lines of code
+Metrics/MethodLength:
+  Max: 20
+
 # Don't enforce top-level class and module documentation
 Style/Documentation:
   Enabled: false
