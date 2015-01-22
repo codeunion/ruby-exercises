@@ -1,3 +1,7 @@
+# Increase permitted ABC size
+Metrics/AbcSize:
+  Max: 20
+
 # Allow methods of up to 20 lines of code
 Metrics/MethodLength:
   Max: 20
