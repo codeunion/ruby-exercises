@@ -40,14 +40,14 @@ end
 if __FILE__ == $PROGRAM_NAME
   # "p" prints something to the screen in a way that's better for debugging
 
-  p max([1,2,3]) == 3
+  p max([1, 2, 3]) == 3
   p max([0, -100, 50, -200]) == 50
   p max([-200, -400, -100, -300]) == -100
   p max([0]) == 0
   p max([1]) == 1
   p max([-1]) == -1
-  p max([11,11,11]) == 11
-  p max([-22,-11,-22]) == -11
+  p max([11, 11, 11]) == 11
+  p max([-22, -11, -22]) == -11
 end
 
 # Each of the lines above will print out "true" or "false" and collectively

@@ -30,7 +30,7 @@ if __FILE__ == $PROGRAM_NAME
   p sum([1, -1]) == 0
   p sum([0, 10, 0, 20]) == 30
   p sum([-111, -111, -111]) == -333
-  p sum([11,22,33]) == 66
+  p sum([11, 22, 33]) == 66
 end
 
 # Remember: these are rumble strips, not a driving instructor.

@@ -46,7 +46,7 @@ if __FILE__ == $PROGRAM_NAME
 
   # If the input array contains all EVEN numbers,
   #   find_even should return the input array
-  p find_even([2,4,6,8,10]) == [2,4,6,8,10]
+  p find_even([2, 4, 6, 8, 10]) == [2, 4, 6, 8, 10]
 
   # If the input array contains all ODD numbers,
   #   find_even should return the empty array

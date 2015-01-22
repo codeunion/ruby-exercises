@@ -62,13 +62,13 @@ end
 # Run our test suite
 def run_tests!
   puts "Testing with Fibonacci inputs"
-  [0,1,2,3,5,39088169].each do |n|
+  [0, 1, 2, 3, 5, 39088169].each do |n|
     assert_equal(true, is_fibonacci?(n), "is_fibonacci?(#{n}) is true")
   end
 
   puts ""
   puts "Testing with non-Fibonacci inputs"
-  [4,6,7,10,39088169 - 1].each do |n|
+  [4, 6, 7, 10, 39088169 - 1].each do |n|
     assert_equal(false, is_fibonacci?(n), "is_fibonacci?(#{n}) is false")
   end
 

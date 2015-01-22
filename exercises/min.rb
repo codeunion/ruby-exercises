@@ -26,14 +26,14 @@ end
 if __FILE__ == $PROGRAM_NAME
   # "p" prints something to the screen in a way that's better for debugging
 
-  p min([1,2,3]) == 1
+  p min([1, 2, 3]) == 1
   p min([0, -100, 50, -200]) == -200
   p min([-200, -400, -100, -300]) == -400
   p min([0]) == 0
   p min([1]) == 1
   p min([-1]) == -1
-  p min([11,11,11]) == 11
-  p min([-22,-11,-22]) == -22
+  p min([11, 11, 11]) == 11
+  p min([-22, -11, -22]) == -22
 end
 
 # Each of the lines above will print out "true" or "false"
