@@ -10,7 +10,7 @@ Style/NumericLiterals:
 Style/RedundantReturn:
   Enabled: false
 
-# Don't enforce explicit self
+# Don't enforce implicit self
 Style/RedundantSelf:
   Enabled: false
 
