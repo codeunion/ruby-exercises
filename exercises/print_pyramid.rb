@@ -22,14 +22,21 @@ require_relative './print_triangle'
 def print_pyramid(height)
   print_triangle(height)
 
-  countdown = (height - 1)
+  # countdown = (height - 1)
 
-  countdown.times do             # I have no idea if this is a really convoluted way of accomplishing this.
-    if countdown > 0             # This is the only way I can write this code and conceptualize.
-      print_line(countdown)      # Is there a better way?
-      countdown -= 1
-    end
+  # countdown.times do             # I have no idea if this is a really convoluted way of accomplishing this.
+  #   if countdown > 0             # This is the only way I can write this code and conceptualize.
+  #     print_line(countdown)      # Is there a better way?
+  #     countdown -= 1
+  #   end
+  # end
+
+  countdown = height                # Refactored using downto!
+
+  countdown.downto(0) do |n|
+    print_line(n)
   end
+
 
 end
 
