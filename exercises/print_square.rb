@@ -19,7 +19,7 @@ def print_line(count)
     print "*"            # This prints a single "*"
   end
 
-  print "\n"             # This forces the output to the next like, like hitting "return" on the keyboard
+  print "\n"   # This forces the output to the next line, like hitting "return"
 end
 
 # We can call methods we've defined ourselves.  In this case, we want
@@ -36,15 +36,15 @@ end
 if __FILE__ == $PROGRAM_NAME
   print_square(1)
 
-  print "\n\n\n" # This is here just to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
   print_square(2)
 
-  print "\n\n\n" # This is here just to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
   print_square(3)
 
-  print "\n\n\n" # This is here just to make the separation between squares clearer
+  print "\n\n\n" # This is here to make the separation between squares clearer
 
   print_square(10)
 end
