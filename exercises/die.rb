@@ -34,7 +34,7 @@ if __FILE__ == $PROGRAM_NAME
   1.upto(roll_count) do |i|
     result = die.roll
     unless (1..6).include?(result)
-      raise "die.roll returned #{result.inspect}, " \
+      fail "die.roll returned #{result.inspect}, " \
             "but it must return a number between 1 and 6 (inclusive)"
     else
       puts "Roll #{i}: #{result}"

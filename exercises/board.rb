@@ -49,16 +49,16 @@ class Board
   # Place a "piece" on the board at (row, column)
   def place(row, column, piece)
     if row >= self.rows
-      raise "Board has #{self.rows} rows and index #{row} is out of bounds."
+      fail "Board has #{self.rows} rows and index #{row} is out of bounds."
     end
 
     if row >= self.rows
-      raise "Board has #{self.columns} columns and " \
+      fail "Board has #{self.columns} columns and " \
             "index #{column} is out of bounds."
     end
 
     unless @board[row][column].nil?
-      raise "Cannot place #{piece.inspect} at row #{row}, column #{column}: " \
+      fail "Cannot place #{piece.inspect} at row #{row}, column #{column}: " \
             "#{@board[row][column].inspect} is already there."
     end
 
