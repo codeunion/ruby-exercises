@@ -10,6 +10,10 @@ Style/Documentation:
 Style/NumericLiterals:
   Enabled: false
 
+# Don't enforce prefix-free predicate methods
+Style/PredicateName:
+  Enabled: false
+
 # Don't enforce implicit return
 Style/RedundantReturn:
   Enabled: false
