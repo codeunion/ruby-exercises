@@ -10,3 +10,7 @@ Style/RedundantSelf:
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
+
+# Don't enforce %w and %W for word arrays
+Style/WordArray:
+  Enabled: false
