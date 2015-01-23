@@ -7,27 +7,30 @@
 # guess as to the number and the person will say "too hot", "spot on", or
 # "too cold", but they will never change the number in their head.
 
+require_relative './hot_or_cold'
 
 class HotOrCold
   def initialize(number_to_guess)
     @number_to_guess = number_to_guess
   end
-
   # Returns the String "hot" if number given is too large, the String "cold" if
   # number given is too small, and the String "correct" if number given is
   # correct.
   def hot_or_cold(number)
-    # Hint: we'll ened to be comparing number to @number_to_guess
+    if number < @number_to_guess
+      return "cold"
+    elsif number > @number_to_guess
+      return "hot"
+    else
+      return "correct"
+    end
   end
 end
-
-
 # A helper method to prompt the user for input and return whatever they type
 def prompt(msg)
   print "#{msg}: "
   gets.chomp
 end
-
 # Don't change this code!  If your HotOrCold#hot_or_cold method is working
 # correctly, the code below will work without changing.
 if __FILE__ == $0
