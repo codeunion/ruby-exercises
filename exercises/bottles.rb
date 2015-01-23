@@ -27,6 +27,24 @@
 #   etc.
 
 def bottles(start_number)
+  puts
+  start_number.downto(1) do |bottles_left|
+      puts "#{bottles_left} #{bottle_or_bottles(bottles_left)} of beer on the\
+ wall, #{bottles_left} #{bottle_or_bottles(bottles_left)}  of beer."
+      puts "Take one down, pass it around, #{bottle_or_bottles(bottles_left-1)}\
+ of beer on the wall!"
+      puts
+  end
+end
+
+def bottle_or_bottles(num)
+  if num == 0
+    return "no more bottles"
+  elsif num == 1
+    return "bottle"
+  else
+    return "bottles"
+  end
 end
 
 if __FILE__ == $0
