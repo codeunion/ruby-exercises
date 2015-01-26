@@ -14,10 +14,25 @@
 #
 
 def factorial(n)
+  if n > 0
+    factorial = 1
+    n.downto(1) do |i|
+      factorial *= i
+    end
+  else
+    factorial = 0
+  end
+  factorial
 end
 
 if __FILE__ == $0
   # What are the common cases?  What are the corner cases?
   # Your sanity checks should look like
   #   p factorial(input) == ...expected return value...
+  p factorial(0)    == 0
+  p factorial(1)    == 1
+  p factorial(2)    == 2
+  p factorial(3)    == 6
+  p factorial(10)   == 3628800
+  p factorial(20)   == 2432902008176640000
 end
