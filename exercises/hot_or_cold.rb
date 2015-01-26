@@ -27,15 +27,22 @@ def hot_or_cold(num_to_guess)
     guess = get_user_guess()   # "guess" is now an integer
 
     if guess < num_to_guess    # The guess is too cold
-      ____
+      puts "You're cold!"
     elsif guess > num_to_guess # The guess is too hot
-      ____
+      puts "You're hot"
     else                       # The guess is juuuust right
-      ____
+      puts "The guess is juuuust right"
 
       # This "return" will make the program return from hot_or_cold, even from
       # inside the while loop.
       return
+
+      # I understand that a 'return' will stop the method and nothing
+      # under the return will be evaluated, however, why should we use
+      # return here rather than 'break'? Isn't break used to
+      # stop a loop in ruby? Or why can't we say while
+      # guess != num_to_guess (and instantiate the guess variable outside the loop)?
+
     end
   end
 end
