@@ -30,24 +30,11 @@
 # for negative: check if incoming number is < 0, if so add "- to array[0]
 
 def commas(num)
-  string = num.abs.to_s
-  if string.length <= 3
-    return string
-  else
-    array_with_commas = []
-    array = string.split(//)
-    array_reversed = array.reverse
-    array_reversed.each_index do |i|
-      array_with_commas.push(array_reversed[i])
-      if i%3 == 2
-        array_with_commas.push(",")
-      end
-    end
-  end
+  string_with_commas = num.abs.to_s.chars.reverse.each_slice(3).map { |part| part.join }.join(",").reverse
   if num < 0
-    array_with_commas.push("-")
+    string_with_commas.prepend("-")
   end
-  return array_with_commas.reverse.join
+  string_with_commas
 end
 
 if __FILE__ == $0
@@ -60,6 +47,4 @@ if __FILE__ == $0
   p commas(-1234)   # == "1,234"
   p commas(-12345)  # == "12,345"
   p commas(-1234567)# == "-1,234,567"
-
 end
-
