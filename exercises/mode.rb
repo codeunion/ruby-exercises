@@ -3,18 +3,14 @@
 # Returns:     The item in the array which occurs most frequently (the mode)
 # Prints:      Nothing
 def mode(array)
-  hash = {}
-  # Building a hash from an array - the same problem we solved in textalyze.rb.
+  counts = Hash.new(0)
+  # Building a counts from an array - the same problem we solved in textalyze.rb.
   array.each do |key|
-    if hash[key]
-      hash[key] += 1
-    else
-      hash[key] = 1
-    end
+    counts[key] += 1
   end
-  mode = hash.max_by {|key, value| value} # Find the max value in the key, value pairs.
-  # .max_by returns an array ["key", value].
-  mode[0] # Return key of the pair with max value.
+
+  counts.max_by {|key, value| value}.first # Find the max value in the key, value pairs.
+  # .max_by returns an array ["key", value]. #first gives first item in array.
 end
 
 if __FILE__ == $0
