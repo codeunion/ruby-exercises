@@ -14,22 +14,24 @@
 #
 
 def factorial(n)
-  if n > 0
-    factorial = 1
-    n.downto(1) do |i|
-      factorial *= i
-    end
-  else
-    factorial = 0
+  if n < 0
+    fail ArgumentError, "input must be non-negative (got '#{n}')"
   end
-  factorial
+
+  result = 1
+
+    n.downto(1) do |i|
+      result *= i
+    end
+
+  result
 end
 
 if __FILE__ == $0
   # What are the common cases?  What are the corner cases?
   # Your sanity checks should look like
   #   p factorial(input) == ...expected return value...
-  p factorial(0)    == 0
+  p factorial(0)    == 1 # factorial of 0 is 1.
   p factorial(1)    == 1
   p factorial(2)    == 2
   p factorial(3)    == 6
