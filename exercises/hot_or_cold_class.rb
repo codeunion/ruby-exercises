@@ -7,8 +7,6 @@
 # guess as to the number and the person will say "too hot", "spot on", or
 # "too cold", but they will never change the number in their head.
 
-require_relative './hot_or_cold'
-
 class HotOrCold
   def initialize(number_to_guess)
     @number_to_guess = number_to_guess
