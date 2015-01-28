@@ -10,24 +10,40 @@
 #
 # If you can't see the pattern, you start with the numbers 0 and 1. From there,
 # every subsequent number is the sum of the previous two numbers. That is,
-#
-# 0 + 1 = 1
-# 1 + 1 = 2
-# 1 + 2 = 3
-# 2 + 3 = 5
-# 3 + 5 = 8
-# etc...
 
-# You can use this site to find very, very large Fibonacci numbers:
-# http://www.bigprimes.net/archive/fibonacci/100/
-# http://www.bigprimes.net/archive/fibonacci/10000/
+# My notes      f1  f2  f3
+# 0 iterations      0
+# 1 iterations  0 + 1 = 1
+# 2 iterations  1 + 1 = 2
+# 3 iterations  1 + 2 = 3
+# 4 iterations  2 + 3 = 5
+# 5 iterations  3 + 5 = 8
 
-# Note #1
-# This kata is the first "performance sensitive" kata.  Depending on your
-# implementation, your method may or may not be able to handle large integer
-# inputs.  Don't worry if it can't.
+# I don't understand why I need to return f2.  Read some wikipedia.  From there
+# I got to the solution below but returning f3 or third base - this was incorrect.
+# Then I looked at:
+# http://stackoverflow.com/questions/12178642/fibonacci-sequence-in-ruby-recursion
+# That's when I realized that I overlooked the recursive method of calling the
+# function over and over inside itself.  Apparently it's easier on the computer
+# to use iteration though.  This was when I realized I needed to return first_base
+# (actually second_base reassigned to first_base at this point in the method.)
 
 def fib(n)
+  first_base = 0
+  second_base = 1
+  third_base = 0
+
+  n.times do
+    third_base = first_base + second_base
+    puts "#{first_base} + #{second_base} = #{third_base}"
+    first_base = second_base # Returning this value.
+    second_base = third_base
+  end
+
+  print third_base
+  print " "
+  return first_base # This is actually the value of second_base.
+  # NOTE: It took me a while to realize that returning third_base was wrong.
 end
 
 if __FILE__ == $0
@@ -45,7 +61,7 @@ if __FILE__ == $0
   # The 5th Fibonacci number is 5 and is the only one with this property, so
   # it serves as a good sanity check.
   p fib(5) == 5
-
+  p fib(20) == 6765
   # This serves as a good input for the "common case"
   p fib(123) == 22698374052006863956975682
 
