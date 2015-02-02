@@ -1,35 +1,48 @@
-# Method name: time_format
-# Inputs:      A number, representing seconds
-# Returns:     A string, describing the number of weeks, days, minutes, seconds
-# Prints:      Nothing
-
-# Remember when we wrote the countdown clock to count down from 5 minutes?
-# Let's write a method that takes in an integer, representing a number of
-# seconds, and returns a string describing larger chunks of time.  For example,
-#
-#   time_format(1234)  == "20m 34s"
-#   time_format(12345) == "3h 25m 45s"
-#
-# This should support weeks, days, hours, minutes, and seconds.
-
 def time_format(seconds)
+  display_weeks = ""
+  display_days = ""
+  display_hours = ""
+  display_minutes = ""
+  display_seconds = "#{seconds}s"
+
+  if seconds >= 60
+    minutes = seconds/60
+    display_seconds = "#{seconds % 60}s"
+    display_minutes = "#{minutes}m "
+
+    if minutes >= 60
+      hours = minutes/60
+      display_minutes = "#{minutes % 60}m "
+      display_hours = "#{hours}h "
+
+      if hours >= 24
+        days = hours/24
+        display_hours = "#{hours % 24}h "
+        display_days = "#{days}d "
+
+        if days >= 7
+          weeks = days/7
+          display_days = "#{days % 7}d "
+          display_weeks = "#{weeks}w "
+        end
+      end
+    end
+  end
+
+  return display_weeks + display_days + display_hours + display_minutes + display_seconds
 end
 
 if __FILE__ == $0
-  # Write your own test cases!  These four won't suffice.
-  # Notice that we're looking at "edge" cases. We likely want to test
-  # the boundaries where the parts "flip over", and also one output on
-  # each side of that boundary, i.e., exactly 1 hour, 1 hour plus 1 second,
-  # and 1 hour minute 1 second.
-  #
-  # Why? This is where our code is most likely to "go wrong."
-
-  p time_format(0)    == "0s"
-  p time_format(1)    == "1s"
-
-  p time_format(59)   == "59s"
-  p time_format(60)   == "1m 0s"
-  p time_format(61)   == "1m 1s"
-
-  p time_format(3600) == "1h 0m 0s"
+  p time_format(0)      == "0s"
+  p time_format(1)      == "1s"
+  p time_format(59)     == "59s"
+  p time_format(60)     == "1m 0s"
+  p time_format(61)     == "1m 1s"
+  p time_format(3600)   == "1h 0m 0s"
+  p time_format(3601)   == "1h 0m 1s"
+  p time_format(3661)   == "1h 1m 1s"
+  p time_format(86400)  == "1d 0h 0m 0s"
+  p time_format(90061)  == "1d 1h 1m 1s"
+  p time_format(604800) == "1w 0d 0h 0m 0s"
+  p time_format(694861) == "1w 1d 1h 1m 1s"
 end
