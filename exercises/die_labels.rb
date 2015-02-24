@@ -6,12 +6,11 @@
 
 class Die
   def initialize(labels)
-    # Hint: assign the labels argument to an instance variable
+    @labels = labels
   end
 
   def roll
-    # Hint: Use Array#sample to return a random label.
-    # See: http://www.ruby-doc.org/core-2.1.2/Array.html#method-i-sample
+    return @labels.sample
   end
 end
 
