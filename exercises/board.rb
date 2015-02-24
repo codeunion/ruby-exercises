@@ -46,15 +46,20 @@ class Board
     @columns
   end
 
-  # Place a "piece" on the board at (row, column)
-  def place(row, column, piece)
-    if row >= self.rows
+  def boundary_check(row, column)
+     if row >= self.rows
       raise "Board has #{self.rows} rows and index #{row} is out of bounds."
-    end
+     end
 
-    if row >= self.rows
+    if column >= self.columns
       raise "Board has #{self.columns} columns and index #{column} is out of bounds."
     end
+  end
+
+  # Place a "piece" on the board at (row, column)
+  def place(row, column, piece)
+
+    boundary_check(row, column)
 
     if @board[row][column] != nil
       raise "Cannot place #{piece.inspect} at row #{row}, column #{column}: #{@board[row][column].inspect} is already there."
@@ -70,11 +75,11 @@ class Board
   #   board.place(5,5,"X")  # Place "X" at (5,5)
   #   board.at(5,5) == "X"  # Now "X" is at (5,5)
   def at(row, column)
-    # We have to do three things:
-    #
     # 1. Make sure "row" is in bounds
     # 2. Make sure "column" is in bounds
     # 3. Return the appropriate value on the board (if present)
+    boundary_check(row, column)
+
     @board[row][column]
   end
 
@@ -87,6 +92,13 @@ class Board
     # 2. Make sure "column" is in bounds
     # 3. Make sure there's a piece at (row, column) to remove
     # 4. If all the above check out, remove the appropriate piece
+    boundary_check(row, column)
+
+    if @board[row][column] = nil
+      raise "There is no piece to remove at row #{row}, column #{column}: #{@board[row][column].inspect}."
+    end
+
+    @board[row][column] = nil
   end
 end
 
