@@ -20,9 +20,10 @@
 class Person
   # This is the initialization method and although it's an instance method,
   # it's special in that it gets called whenever we call Person.new
-  def initialize(first_name, last_name)
+  def initialize(first_name, last_name, age)
     @first_name = first_name
     @last_name = last_name
+    @age = age
   end
 
   # The first_name instance methods returns the value of the
@@ -35,6 +36,10 @@ class Person
   # @last_name instance variable
   def last_name
     @last_name
+  end
+
+  def age
+    @age
   end
 
   # The first_initial instance method returns the first letter of
@@ -76,13 +81,17 @@ if __FILE__ == $0
   print "Enter your last name:  "
   last_name = gets.chomp
 
+  print "Enter you age:  "
+  age = gets.chomp
+
   # Person.new returns a new instance of the Person class and we assign it
   # to the variable person
-  person = Person.new(first_name, last_name)
+  person = Person.new(first_name, last_name, age)
 
   puts "You entered..."
   puts "First name: #{person.first_name}"
   puts "Last name:  #{person.last_name}"
+  puts "Age: #{person.age}"
   puts ""
 
   puts "Welcome, #{person.first_name}!"
@@ -91,4 +100,5 @@ if __FILE__ == $0
   puts "Full name:  #{person.full_name}"
   puts "Short name: #{person.short_name}"
   puts "Initials:   #{person.initials}"
+  puts "#{person.full_name} is #{person.age} years old."
 end
