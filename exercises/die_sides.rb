@@ -9,24 +9,36 @@
 
 class Die
   def initialize(sides)
-    # This is your job. :)
-    # Hint: you'll need to set an instance variable so that your Die instance
-    # can remember what value the user passed into Die.new
+    @sides = sides
   end
 
   def roll
-    # This is your job. :)
-    # Hint: You'll need to reference an instance variable in this method.
+    return rand(1..@sides)
   end
 end
 
 
 if __FILE__ == $0
-  die_10 = Die.new(10)
-  die_20 = Die.new(20)
-  die_6  = Die.new(6)
 
-  # die_10.roll should return a random number between 1 and 10 (inclusive)
-  # die_20.roll should return a random number between 1 and 20 (inclusive)
-  # die_6.roll should return a random number between 1 and 6 (inclusive)
+  def test_roll(roll_count, sides)
+    die = Die.new(sides)
+    puts ""
+    puts "Rolling the die #{roll_count} times. Valid numbers are between 1 and #{sides}."
+    puts ""
+
+    1.upto(roll_count) do |i|
+      result = die.roll
+      unless (1..sides).include?(result)
+        raise "die.roll returned #{result.inspect}, but it must return a number between 1 and 6 (inclusive)"
+      else
+        puts "Roll #{i}: #{result}"
+      end
+    end
+  end
+
+  test_roll(5, 10)
+  test_roll(3, 20)
+  test_roll(6, 6)
+
 end
+
