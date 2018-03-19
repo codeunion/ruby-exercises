@@ -13,14 +13,14 @@
 # This is going to be very similar to max, so don't be afraid if
 # these two methods look almost identical
 def min(list)
-  ____ = ____
-  ____.each do |____|
-    if ____
-      ____ = ____
+  start_small = list[0]   #or equivalently, list.first
+  list.each do |numba|    # or equivalently, for each item in list, do something
+    if numba < start_small  # if current numba is less than start_small
+      start_small = numba   # set start_small to the numba
     end
   end
 
-  return ____
+  return start_small        # Since we have gone through the list, return start_small
 end
 
 if __FILE__ == $PROGRAM_NAME
