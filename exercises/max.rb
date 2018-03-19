@@ -27,7 +27,7 @@ end
 #   "If this file is the file currently being executed, then..."
 #
 # __FILE__ is always the name of the current file.
-# $0 is always the name of the program beind executed.
+# $0 is always the name of the program being executed.
 #
 # This means that if we run this file directly, i.e.,
 #     ruby max.rb
