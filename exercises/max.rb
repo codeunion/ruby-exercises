@@ -61,7 +61,7 @@ end
 # prints out "true.""  For example,
 #   1. We might have missed a corner case
 #   2. The code does what it should, but is conceptually confused
-#   3. Something else we haven't though of
+#   3. Something else we haven't thought of
 #
 # Remember: Option #3 is *always* possible.
 #
