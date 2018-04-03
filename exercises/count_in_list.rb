@@ -19,9 +19,19 @@ def count_in_list(list, item_to_count)
   #  1. A running total of the number of times you've seen the item
   #  2. A way to loop/iterate through the list
   #  3. A way to add to the running total as you see the item
+  list = list.to_s
+  words = list.split
+
+  num = words.count(item_to_count)
+
+
 end
 
 if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
+  p count_in_list("A way to add to the running total", "to") == 2
+  p count_in_list([1,1,1], 1)  == 3
+  p count_in_list([1,2,3], -1) == 0
+  p count_in_list([1,2,3], 1)  == 1
 end

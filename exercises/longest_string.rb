@@ -12,6 +12,7 @@
 #   str.length == 4
 
 def longest_string(list)
+
   my_long_str = list[0] # assigns a varible to the first array index
   list.each do |str| # for each str in list
     if str.length > my_long_str.length # if the lengthof current str is greater than my_long_str
@@ -32,5 +33,5 @@ if __FILE__ == $PROGRAM_NAME
   p longest_string(["We", "might", "have", "missed", "a", "corner", "case"]) == "missed"
   p longest_string(["Remember", "that", "conceptually", "x"]) == "conceptually"
 
-  p longest_string([123456789, "might", "have", 23564.25689, "a", "corner", "case"]) == "corner"
+  p longest_string(["123456789", "might", "have", "23564.25689", "a", "corner", "case"]) == "23564.25689"
 end
