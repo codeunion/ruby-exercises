@@ -3,18 +3,26 @@ def count_in_list(list, item_to_count)
   #  1. A running total of the number of times you've seen the item
   #  2. A way to loop/iterate through the list
   #  3. A way to add to the running total as you see the item
-  list = list.to_s
-  puts list
+  mycount = []
 
-  words = list.split(" ")
+  list = list.map(&:to_s)
 
-  puts words
+  print list
 
-  num = words.count(item_to_count)
+  list.each do |str|
+    if str == item_to_count
+      mycount.push(str)
+      puts
+      print mycount
+
+    end
+    puts
+  end
+
+  puts mycount.count
 
 
-  puts num
 
 end
 
-count_in_list([1,1,1], "to")
+count_in_list([1,1,1, "to", "to kill", 2562], "1")

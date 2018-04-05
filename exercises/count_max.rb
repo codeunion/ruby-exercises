@@ -22,9 +22,20 @@ def count_max(list)
   #
   # But remember: inelegant, working code is better than elegant,
   # unfinished code.
+  item = max(list) # Sets item to the maximum number in the list
+
+  list.each do |num| # For each num in the list do
+    maxcount = count_in_list(list, item) # Sets citem equal to the count of item
+    return maxcount # returns the count
+  end
+
 end
 
 if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
+  p count_max([1, 2, 3]) == 1
+  p count_max([50, -100, 50, -200]) == 2
+  p count_max([-200, -400, -100, -300]) == 1
+  p count_max([10, 1,2,10,10]) == 3
 end

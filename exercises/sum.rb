@@ -21,6 +21,12 @@
 
 def sum(list)
   # This is your job. :)
+
+  sum = 0 # Set initial value to zero
+
+  list.each {|x| sum += x } # Iterate through list, get an index, add to sum and set it equal to sum. Repeat until last array
+
+  return sum # Return final value of sum
 end
 
 if __FILE__ == $PROGRAM_NAME
