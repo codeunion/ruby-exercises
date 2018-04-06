@@ -23,7 +23,11 @@ def print_line(count)
 end
 
 def print_triangle(height)
-  # You have to fill in the details here.
+  (1..height).each do |i| # or, equivalently, for i in (1..height)
+    print_line(i)         # I called the print_line method on the print_triangle method using each item on print_triangle as arguement. I don't know what its called. It just works ;). I acctually solved this by mistake, trying to solve print_square.rb
+    
+  end
+
 end
 
 # There are no rumble strips this time.  It's up to you to decide whether
