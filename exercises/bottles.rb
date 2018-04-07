@@ -27,11 +27,21 @@
 #   etc.
 
 def bottles(start_number)
+    puts "Counting down..."
+    start_number.downto(1) do |i|
+      if i > 1
+        print "#{i} bottles of beer on the wall, #{i} bottles of beer. Take one down, pass it around, "
+        puts "#{i-1} bottles of beer on the wall!"
+      else
+        print "#{i} bottles of beer on the wall, #{i} bottles of beer. Take one down, pass it around, no more bottles of beer on the wall!"
+      end
+    end
+#I could not implement the method at the moment so I just coded it logically straight
 end
 
 if __FILE__ == $PROGRAM_NAME
   # What *should* this print?
-  bottles(5)
+  bottles(50)
 end
 
 # Hint #1:
