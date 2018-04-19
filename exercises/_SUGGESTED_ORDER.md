@@ -1,23 +1,23 @@
 This is the **suggested order** for completing the exercises:
 
-1. [max.rb](max.rb)
-1. [min.rb](min.rb)
-1. [longest_string.rb](longest_string.rb)
-1. [shortest_string.rb](shortest_string.rb)
-1. [word_count.rb](word_count.rb)
-1. [count_in_list.rb](count_in_list.rb)
-1. [count_max.rb](count_max.rb)
-1. [sum.rb](sum.rb)
-1. [mean.rb](mean.rb)
-1. [print_square.rb](print_square.rb)
-1. [print_triangle.rb](print_triangle.rb)
-1. [print_pyramid.rb](print_pyramid.rb)
+1. [max.rb](max.rb) => DONE
+1. [min.rb](min.rb) => DONE
+1. [longest_string.rb](longest_string.rb) => DONE
+1. [shortest_string.rb](shortest_string.rb) => DONE
+1. [word_count.rb](word_count.rb) => DONE
+1. [count_in_list.rb](count_in_list.rb) => DONE
+1. [count_max.rb](count_max.rb) => DONE
+1. [sum.rb](sum.rb) => DONE
+1. [mean.rb](mean.rb) => DONE
+1. [print_square.rb](print_square.rb) =>DONE
+1. [print_triangle.rb](print_triangle.rb) => DONE
+1. [print_pyramid.rb](print_pyramid.rb) => DONE
 1. [print_horizontal_pyramid.rb](print_horizontal_pyramid.rb)
-1. [hot_or_cold.rb](hot_or_cold.rb)
-1. [bottles.rb](bottles.rb)
-1. [find_even.rb](find_even.rb)
-1. [mode.rb](mode.rb)
-1. [commas.rb](commas.rb)
+1. [hot_or_cold.rb](hot_or_cold.rb) => DONE
+1. [bottles.rb](bottles.rb) => DONE
+1. [find_even.rb](find_even.rb) => DONE
+1. [mode.rb](mode.rb) => DONE
+1. [commas.rb](commas.rb) => DONE
 1. [factorial.rb](factorial.rb)
 1. [fibonacci.rb](fibonacci.rb)
 1. [find_links.rb](find_links.rb)
