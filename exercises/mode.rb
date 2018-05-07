@@ -16,6 +16,10 @@
 # Break it down as clearly as you can in your own head first.
 
 def mode(array)
+  maxi = Hash.new(0) # Creates an empty hash
+  array.select{ |nums| maxi[nums] += 1} # For each element in the array, collects the element and frequencies (key/value pair) and appends to the maxi Hash
+  maxi.max_by { |a, b| b}.first # Checks each key/value pair in the maxi hash and returns the "first" key with the highest value.
+
 end
 
 if __FILE__ == $PROGRAM_NAME
@@ -49,4 +53,8 @@ if __FILE__ == $PROGRAM_NAME
   p mode(["a", "a", "a", "b"]) == "a"
   p mode(["b", "a", "a", "a"]) == "a"
   p mode(["a", "b", "a", "a"]) == "a"
+
+  # This `mode depends on the order of the data`
+  p mode(["a", "b", "b", "a"]) == "a"
+  p mode(["b", "a", "b", "a"]) == "b"
 end

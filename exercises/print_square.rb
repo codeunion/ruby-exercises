@@ -13,21 +13,24 @@
 
 # The print_line method is here to help you.
 # Conceptually, it prints out a row of "count" *'s.  Run it yourself to
-# see how it works.  Experiment with different inputs.
+# see how it works.  Experiment with xRails params explained?different inputs.
 def print_line(count)
   (1..count).each do |i| # or, equivalently, for i in (1..count)
     print "*"            # This prints a single "*"
   end
 
-  print "\n"   # This forces the output to the next line, like hitting "return"
+  #print "\n"   # This forces the output to the next line, like hitting "return"
 end
 
 # We can call methods we've defined ourselves.  In this case, we want
 # to call the print_line method we've defined to help us print out a square.
 def print_square(dimension)
+
   (1..dimension).each do |i| # or, equivalently, for i in (1..dimension)
-    print_line(____)         # Fill in the blank, here.
+    print_line(dimension)         # Recursion. Kind of. I called the print_line method on the print_square method using the print_square arguement. I don't know what its called. It just works ;).
+    print "\n"
   end
+
 end
 
 # There are no rumble strips this time.  It's up to you to decide whether

@@ -10,6 +10,9 @@
 #  find_even([10,10,10,11,11,11]) == [10,10,10]
 
 def find_even(array)
+  array1 = []
+  array1 = array.find_all { |ar| ar % 2 == 0}
+  array = array1
 end
 
 # Note #1
@@ -43,14 +46,28 @@ if __FILE__ == $PROGRAM_NAME
 
   # If the input is the empty array,
   #  find_even should return the empty array
-
+  p find_even([]) == []
   # If the input array contains all EVEN numbers,
   #   find_even should return the input array
+  puts
   p find_even([2, 4, 6, 8, 10]) == [2, 4, 6, 8, 10]
+  print find_even([2, 4, 6, 8, 10]) #Just to make double sure onscreen that I got it ;)
+  puts
 
   # If the input array contains all ODD numbers,
   #   find_even should return the empty array
-
+  puts
+  p find_even([3, 5, 7, 9, 11]) == []
+  print find_even([3, 5, 7, 9, 11, 13]) #Just to make double sure onscreen that I got it ;)
+  puts
   # If an even number appears N times in the input array,
   #   it should appear N times in the the array that find_even returns
+  puts
+  p find_even([2, 4, 4, 6, 8, 10]) == [2, 4, 4, 6, 8, 10]
+  print find_even([2, 4, 4, 6, 8, 10]) #Just to make double sure onscreen that I got it ;)
+  puts
+
+  puts
+  p find_even([1, 2, 3, 4, 5, -6, 7, -8, 9, 10]) == [2, 4, -6, -8, 10]
+  print find_even([1, 2, 3, 4, 5, -6, 7, -8, 9, 10]) #Just to make double sure onscreen that I got it ;)
 end

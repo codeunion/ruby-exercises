@@ -19,9 +19,23 @@ def count_in_list(list, item_to_count)
   #  1. A running total of the number of times you've seen the item
   #  2. A way to loop/iterate through the list
   #  3. A way to add to the running total as you see the item
+  mycount = [] # Sets the initial count of item_to_count to empty array
+
+  list.each do |str| # For each str in list
+    if str == item_to_count # If str is equal to item_to_count
+      mycount.push(str) # Push str to the mycount array
+    end
+
+  end
+  
+  return mycount.count # Return the count of str in mycount
 end
 
 if __FILE__ == $PROGRAM_NAME
   # I'd advise putting some sanity checks here.
   # How else will you be sure your code does what you think it does?
+  p count_in_list(["A", "way", "to", "add", "to", "the"], "to") == 2
+  p count_in_list([1,1,1], 1)  == 3
+  p count_in_list([1,2,3], -1) == 0
+  p count_in_list([1,2,3], 1)  == 1
 end
