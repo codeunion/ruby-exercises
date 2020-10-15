@@ -15,9 +15,9 @@ The exercise files are listed in alphabetical order in the [exercise directory](
 ## Getting Started
 
 1. [Fork][gh-help-forking] and clone this repository
-1. Write code to solve individual exercises
-1. Make small, frequent commits
-1. Push your commits to your fork on GitHub
+2. Write code to solve individual exercises
+3. Make small, frequent commits
+4. Push your commits to your fork on GitHub
 
 Once your code is on the GitHub, you can (and should) request feedback with the [CodeUnion command-line tool][codeunion-cli-tool].
 
